@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Words Highlighter",
+    "version": "1.0",
+    "description": "Highlight words on a webpage",
+    "permissions": ["tabs", "storage", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "mg-16.png",
+      "48": "mg-48.png",
+      "128": "mg-128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
