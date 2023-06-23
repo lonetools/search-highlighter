@@ -1,14 +1,5 @@
 var word;
 
-chrome.runtime.onMessage.addListener((message, sender) => {
-  if (message.message === 'word_updated') {
-    chrome.scripting.executeScript({
-      target: { tabId: message.tabId },
-      files: ['content.js']
-    });
-  }
-});
-
 
 function updateWord() {
   // remove old highlights
